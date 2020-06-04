@@ -1,11 +1,13 @@
 body{
   background-color: #c1bfc9;
+  padding-top: 70px;
 }
 .App{
   background-color: #259641;
   min-height:500px;
   width: 400px;
-  margin: 40px auto;
+  margin:40px auto;
+  margin-bottom: 50px;
 }
 
 #to-do-form input{
@@ -40,4 +42,12 @@ body{
 }
 #to-do-form button:hover{
   background-color: rgb(245, 121, 6)
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  height: 65px;
+  background-color: black;
 }
