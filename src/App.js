@@ -3,7 +3,11 @@ import './App.css';
 import ListItems from './ListItems';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
+import { Switch, Route } from 'react-router-dom';
+import todos from './components/pages/todos';
+import contact from './components/pages/contact';
 
 
 library.add(faTrash)
@@ -70,11 +74,15 @@ class App extends React.Component {
   }
  render(){
   return (
-    <div>
-    <nav className="navbar">
-      
-    </nav>
-    <div>
+  <div>
+    
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={todos}/>
+        <Route path="/contact" component={contact}/>
+      </Switch>
+    
+   <div>
       <header className="App">
         <form id="to-do-form" onSubmit={this.addItem}>
           <input type="text" placeholder="Enter task" value= {this.state.currentItem.text} onChange={this.handleInput}></input>
@@ -86,7 +94,7 @@ class App extends React.Component {
         
       </header>
     </div>
-    </div>
+  </div>
   );
  }
 }
