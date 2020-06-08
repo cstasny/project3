@@ -1,18 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import ListItems from './ListItems';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
-import { Switch, Route } from 'react-router-dom';
-import todos from './components/pages/todos';
-import contact from './components/pages/contact';
-
+import Navbar from './Navbar';
+import { Switch, Route} from 'react-router-dom';
+import contact from './contact';
+import ListItems from'./ListItems';
+import todo from './todo';
 
 library.add(faTrash)
 
-class App extends React.Component {
+class App extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -74,16 +73,15 @@ class App extends React.Component {
   }
  render(){
   return (
-  <div>
-    
+    <div>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={todos}/>
+        <Route exact path="/" component={todo}/>
         <Route path="/contact" component={contact}/>
       </Switch>
     
-   <div>
-      <header className="App">
+    <div className="App">
+      <header>
         <form id="to-do-form" onSubmit={this.addItem}>
           <input type="text" placeholder="Enter task" value= {this.state.currentItem.text} onChange={this.handleInput}></input>
           <button type="submit">Add</button>
@@ -94,7 +92,7 @@ class App extends React.Component {
         
       </header>
     </div>
-  </div>
+    </div>
   );
  }
 }

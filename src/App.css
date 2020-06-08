@@ -7,6 +7,7 @@ body {
   width: 400px;
   margin:40px auto;
   margin-bottom: 50px;
+  border: 1px solid  black;
 }
 
 #to-do-form input{
@@ -15,10 +16,12 @@ body {
   color: #fff;
   width: 200px;
   height: 50px;
-  margin: 20px;
+  margin: 40px;
   padding: 0 20px;
   font-size: 18px;
   border-radius: 10px;
+  
+
 }
 #to-do-form input::placeholder{
   color: #c1bfc9;
@@ -27,13 +30,14 @@ body {
   outline: none;
 }
 #to-do-form button{
-  height: 50px;
-  width: 80px;
+  height: 45px;
+  width: 65px;
   border-radius: 5px;
   border: 0;
   background-color: #c1bfc9; 
   cursor: pointer;
   font-weight: bold;
+  margin: 10px;
 
 }
 #to-do-form button:focus{
@@ -43,8 +47,56 @@ body {
   background-color: rgb(245, 121, 6)
 }
 
-
 .navbar {
   background-color: rgba(27, 112, 137, 1);
   font-size: 20px;
 }
+
+  
+  .container {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 0 5px  #c1bfc9;
+    border: 1px solid  black;
+    background-color: #259641;
+    margin:40px auto;
+    margin-bottom: 50px;
+    box-shadow: 10px rgba(27, 112, 137, 1);
+  }
+  .container input{
+    background-color: rgba(27, 112, 137, 1);
+    color: rgba(27, 112, 137, 1);
+  }
+  .container input::placeholder {
+  
+    color: #c1bfc9;
+    font-size: 18px;
+    opacity: 0px;
+    
+    
+  }
+.container textarea::placeholder {
+    color: #c1bfc9;
+    font-size: 18px;
+    opacity: 0px;
+  }
+  .container textarea {
+    background-color: rgba(27, 112, 137, 1);
+    margin-bottom: 5px;
+  }
+  .container .btn {
+    
+    color: black;
+    background-color:#c1bfc9;
+    margin-left: 85px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+  }
+
+  .container .btn:hover {
+    
+    background-color: rgb(245, 121, 6);
+    
+  }

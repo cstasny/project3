@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-class Contact extends Component {
+class todo extends Component {
     render() {
         return (
             <div>
-                <h2>Contact List</h2>
+                <h2>todo page</h2>
             </div>
         )
     }
 }
-export default Contact;
+export default todo;
