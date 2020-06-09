@@ -5,6 +5,7 @@
     height: 50px;
     background-color: rgba(27, 112, 137, 1);
     border-radius: 5px;
+    border: 1px solid  #c1bfc9;
     
 }
 .list p{

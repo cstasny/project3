@@ -12,7 +12,7 @@ body {
 
 #to-do-form input{
   background-color: rgba(27, 112, 137, 1);
-  border: 0; 
+  border: 1px solid  #c1bfc9;
   color: #fff;
   width: 220px;
   height: 50px;
@@ -37,7 +37,7 @@ body {
   cursor: pointer;
   font-weight: bold;
   margin: 5px;
-  border: 10px black;
+  border: 1px solid  black;
 
 }
 #to-do-form button:focus{
@@ -90,6 +90,8 @@ body {
     margin-left: 95px;
     margin-bottom: 5px;
     font-weight: bold;
+    border: 1px solid  black;
+    
     
   }
 
