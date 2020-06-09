@@ -14,3 +14,5 @@ Ideas for improvement:
 3. To make the contact form functional.
 4. To be able to show how much progres is completed from your todo list.
 
+
+
