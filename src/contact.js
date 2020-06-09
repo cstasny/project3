@@ -13,7 +13,7 @@ class contact extends Component {
          <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Enter Email" />
          <label for="exampleFormControlTextarea1">Enter Text</label>
          <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Text"></textarea>
-         <button type="button" class="btn btn-outline col-md-6">Submit</button>
+         <button type="button" class="btn btn-outline">Submit</button>
    </form>
         )
     }
